@@ -1,0 +1,217 @@
+// 
+
+$white: rgb(255, 255, 255);
+
+$carousel-control-color:             $white;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .15s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $white;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-color:             $white;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .3s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+// Add the following CSS to set the carousel dimensions
+.carousel {
+    width: 100%;
+    height: 600px;
+    margin-top: 20px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 10px !important;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 80px !important;
+    margin-left: 20px;
+}
+
+body{
+    background: linear-gradient(90deg, #5b99c2, #619ac2, #679bc3, #6c9cc3, #719dc3, #769fc3, #7aa0c3, #7fa1c3);
+    //z-index: -1;
+    width:1080px;
+    box-shadow: -20px 0 px -5px #679bc3, 10px 0 15px -5px #679bc3;
+}
+body{
+    padding-top:50px;
+    //background: #555;
+  }
+
+  .text-capitalize{
+    margin-top: 100px;
+    padding: 50px;
+  }
+
+  .container{
+    justify-content: center;
+  }
+  
+  .flip {
+    -webkit-perspective: 800;   
+            perspective: 800;
+          position: relative;
+          text-align: center;
+  }
+//   .inner{
+//     align-content: center;
+//     // margin-left: 5;
+//     // height:0;
+//     // width:0px;
+    
+//   }
+  .flip .card.flipped {
+    -webkit-transform: rotatey(-180deg);
+            transform: rotatey(-180deg);
+  }
+  .flip .card {
+      height:240px;
+        width:320px;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transition: 0.5s;
+      transform-style: preserve-3d;
+      transition: 0.5s;
+      background-color: #fff;
+  }
+  
+  .card:hover{
+    transform: rotateY(180deg);
+  }
+  
+  .flip .card .face {
+    -webkit-backface-visibility: hidden ;
+      backface-visibility: hidden ;
+     z-index: 2;
+  }
+  .flip .card .front {
+     position: absolute;
+     width: 270px;
+     z-index: 1;
+  }
+  .flip .card .front img{
+    width: 270px;
+    height: 100%;
+  }
+  .flip .card .img {
+     position: relaitve;
+     width: 270px;
+     height: 178px;
+     z-index: 1;
+     border: 2px solid #000;
+  }
+  .flip .card .back {
+    padding-top: 10%;
+    padding-right: 10px;
+    -webkit-transform: rotatey(-180deg);
+            transform: rotatey(-180deg);
+    position: absolute;
+  }
+  .inner{
+    margin:0px !important;
+    width: 270px;
+    margin-left: 2px;
+  }body{
+    padding-top:50px;
+    //background: #555;
+  }
+
+  .text-capitalize{
+    margin-top: -100px;
+    padding: 50px;
+    color: white;
+  }
+
+  .container{
+    justify-content: center;
+  }
+  
+  .flip {
+    -webkit-perspective: 800;   
+            perspective: 800;
+          position: relative;
+          text-align: center;
+  }
+  .inner{
+    height:200px;
+    width:180px;
+    
+  }
+  .flip .card.flipped {
+    -webkit-transform: rotatey(-180deg);
+            transform: rotatey(-180deg);
+  }
+  .flip .card {
+      height:200px;
+    width:250px;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transition: 0.5s;
+      transform-style: preserve-3d;
+      transition: 0.5s;
+      background-color: #fff;
+  }
+  
+  .card:hover{
+    transform: rotateY(180deg);
+  }
+  
+  .flip .card .face {
+    -webkit-backface-visibility: hidden ;
+      backface-visibility: hidden ;
+     z-index: 2;
+  }
+  .flip .card .front {
+     position: absolute;
+     width: 270px;
+     z-index: 1;
+  }
+  .flip .card .front img{
+    width: 270px;
+    height: 100%;
+  }
+  .flip .card .img {
+     position: relaitve;
+     width: 300px;
+     height: 208px;
+     z-index: 1;
+     border: 2px solid #000;
+  }
+  .flip .card .back {
+    padding-top: 10%;
+    -webkit-transform: rotatey(-180deg);
+            transform: rotatey(-180deg);
+    position: absolute;
+  }
+  .inner{
+    margin:0px !important;
+    width: 270px;
+  }
+
+  .row{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: -50px;
+  }

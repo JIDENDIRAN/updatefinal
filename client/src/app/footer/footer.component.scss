@@ -1,50 +1,57 @@
-.footer {
-    // padding: 10px 0; /* Reduced padding for height adjustment */
-    background-color: #007bff; /* Blue background */
-    color: white;
-    width: 100%;
-    // position:absolute;  
-  }
-  
-  .footer h5 {
-    font-size: 1.25rem;
-    margin-bottom: 10px; /* Reduced margin */
-  }
-  
-  .footer p {
-    margin: 0;
-  }
-  
-  .footer ul {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .footer ul li {
-    margin-bottom: 5px; /* Reduced margin */
-  }
-  
-  .footer ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer ul li a:hover {
-    color: #0056b3; /* Darker blue on hover */
-  }
-  
-  .footer .text-center p {
-    margin: 5px 0;
-  }
-  
-  .footer .text-center a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer .text-center a:hover {
-    color: #0056b3; /* Darker blue on hover */
-  }
-  
+// .footer {
+//   margin:0;
+//   padding: 0; /* Reduced padding for height adjustment */
+//   //background-color: #0098e9 !important; /* Semi-transparent background */
+//   color: white;
+//   width: 100%;
+//   position: relative;
+//   border:#123 0.5px groove;
+//   bottom: 0;
+//   left: 0;
+//   height: 30%;
+//   backdrop-filter: blur(10px); /* Blur effect */
+//   -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+// }
+
+
+// .footer h5 {
+//   font-size: 1.25rem;
+//   margin-bottom: 10px; /* Reduced margin */
+// }
+
+// .footer p {
+//   margin-left: auto;
+// }
+
+// .footer ul {
+//   padding: auto;
+//   list-style: none;
+// }
+
+// .footer ul li {
+//   margin-bottom: 3px; /* Reduced margin */
+// }
+
+// .footer ul li a {
+//   color: white;
+//   text-decoration: none;
+//   transition: color 0.3s;
+// }
+
+// .footer ul li a:hover {
+//   color: #53606e; /* Darker blue on hover */
+// }
+
+// .footer .text-center p {
+//   margin: 5px 0;
+// }
+
+// .footer .text-center a {
+//   color: white;
+//   text-decoration: none;
+//   transition: color 0.3s;
+// }
+
+// .footer .text-center a:hover {
+//   color: #c4cbd2; /* Darker blue on hover */
+// }

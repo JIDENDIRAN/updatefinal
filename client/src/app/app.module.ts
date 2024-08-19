@@ -22,6 +22,7 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { OrdersComponent } from './orders/orders.component';
 import { ErrorComponent } from './error/error.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomePageComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './footer/footer.component';
       MaintenanceComponent,
       OrdersComponent,
       ErrorComponent,
-      FooterComponent
+      FooterComponent,
+      HomePageComponent
   ],
   imports: [
     BrowserModule,

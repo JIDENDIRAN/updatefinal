@@ -56,7 +56,7 @@ export class AppComponent {
  
    
     if (this.IsLoggin == false) {
-      this.router.navigateByUrl('/login');
+      this.router.navigateByUrl('/home-page');
  
     }
   }
